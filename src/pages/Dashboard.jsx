@@ -8,7 +8,7 @@ export default function Dashboard(){
   const [data,setData]=useState([]);
 
   useEffect(()=>{
-    fetch("https://YOUR_RENDER_URL/api/user/analytics")
+    fetch("https://invesol-backend.onrender.com/api/user/analytics")
       .then(res=>res.json())
       .then(d=>setData(d.categories));
   },[]);
